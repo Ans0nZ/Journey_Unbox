@@ -1,0 +1,121 @@
+{
+    "Title": "Journey: Unbox",
+    "Credits": "Created by Anson Fong",
+    "InitialLocation": "Box1",
+    "Locations": {
+        "Box1": {
+            "Body": "You were sucked into the box! Welcome to the magician's initiation ceremony!",
+            "Choices": [
+                {
+                    "Text": "Trial of Strength",
+                    "Target": "Box_Strength1"
+                },
+                {
+                    "Text": "Trial of Speed",
+                    "Target": "Box_Speed1"
+                },
+                {
+                    "Text": "Hidden",
+                    "Target": "HiddenLevel",
+                    "Condition": "allGemsCollected"
+                }
+            ]
+        },
+        "Box_Strength1": {
+            "Body": "A slime appears in front of you. When you defeated the slime, you feel your strength increase! It also dropped a gem with a letter engraved inside. . . w?",
+            "Gem": "w",
+            "Choices": [
+                {
+                    "Text": "Next level",
+                    "Target": "Box_Strength2"
+                },
+                {
+                    "Text": "Back",
+                    "Target": "Box1"
+                }
+            ]
+        },
+        "Box_Strength2": {
+            "Body": "What appeared this time were 3 dwarf goblins. Although the opponent had a numerical advantage, you still defeated them with your enhanced strength. This time the loot is a gem engraved with 'a'.",
+            "Gem": "a",
+            "Choices": [
+                {
+                    "Text": "Next level",
+                    "Target": "Box_Strength3"
+                },
+                {
+                    "Text": "Back",
+                    "Target": "Box1"
+                }
+            ]
+        },
+        "Box_Strength3": {
+            "Body": "This time a strong werewolf appeared. After a hard fight, you finally beat it into a weredog. Pick up the gem it dropped. The letter 'o' glows faintly in the center of the gem.",
+            "Gem": "o",
+            "Choices": [
+                {
+                    "Text": "Try Trial of Speed?",
+                    "Target": "Box_Speed1"
+                },
+                {
+                    "Text": "Final",
+                    "Target": "Final"
+                }
+            ]
+        },
+        "Final": {
+            "Body": "Congratulations, you are now an extraordinary magician! Now, use your power to defend the world!",
+            "Choices": [
+                {
+                    "Text": "Back",
+                    "Target": "Box1"
+                }
+            ]
+        },
+        "Box_Speed1": {
+            "Body": "In the single-plank bridge trial, you closed your eyes and ran quickly. As you ran, you heard the bridge behind you begin to break. Finally reaching the end, a gem with the word 'i' floating at the end. You feel your strength return and your speed and reflexes improve.",
+            "Gem": "i",
+            "Choices": [
+                {
+                    "Text": "Next level",
+                    "Target": "Box_Speed2"
+                },
+                {
+                    "Text": "Back",
+                    "Target": "Box1"
+                }
+            ]
+        },
+        "Box_Speed2": {
+            "Body": "Walls full of holes appear on all sides to surround you. Then arrows start to spray from the small hole, and you hide and hide in a panic. A gem with the word 'n' falls from the sky. With the appearance of the gem, your speed increase again.",
+            "Gem": "n",
+            "Choices": [
+                {
+                    "Text": "Next level",
+                    "Target": "Box_Speed3"
+                },
+                {
+                    "Text": "Back",
+                    "Target": "Box1"
+                }
+            ]
+        },
+        "Box_Speed3": {
+            "Body": "I believe you also have a premonition. That's right! This time it's a single-plank bridge + hidden weapon sneak attack! With no danger, you finally come to the end of the passage. Another gem with the word 'i' automatically flies into your hand.",
+            "Gem": "i2",
+            "Choices": [
+                {
+                    "Text": "Next level",
+                    "Target": "Final"
+                },
+                {
+                    "Text": "Try Trial of Strength?",
+                    "Target": "Box_Strength1"
+                }
+            ]
+        },
+        "HiddenLevel": {
+            "Body": "Child, this is a gift from your father. Do you like it? I hope you and your mother are well. I am sorry that I may not have fulfilled my responsibilities as a father, but I still want to tell you and my wife that I love you! (woaini)"
+        }
+    }
+}
